@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Widget</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/color/jquery.color-2.1.2.js"
+        integrity="sha256-1Cn7TdfHiMcEbTuku97ZRSGt2b3SvZftEIn68UMgHC8=" crossorigin="anonymous">
+        </script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="materialize.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+    <div class="container pageHead valign-wrapper">
+        <div class="row r1">
+            <div class="col s12">
+                <div  class="row" style="position:relative;">
+                    <div class="col s8" style="color:black;font-size:2.5rem;">
+                        What zipcode would you like the weather for?</div>
+                    <input class="col s2 zipcode"
+                        style="display:inline; position:absolute; bottom:0; background-color:rgba(255, 255, 0, 0.288);"
+                        maxlength="13" size="13" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class=col></div>
+                <div class="cloudimg col s2 l1"><img src="images/cloud_white_48x48.png"></div>
+                <div style="font-size:3rem;" class="currtemp col s2 l1"></div>
+                <div class="col s2 l1">
+                    <div style="font-size:1.5rem;margin-bottom:0;" class="row"> &#8457; </div>
+                    <div style="font-size:1.5rem;margin-bottom:0;" class="row"> &#8451; </div>
+                </div>
+                <div class="col s2 l1">
+                    <div style="font-size:1.5rem;margin-bottom:0;" class="hi1 row"> </div>
+                    <div style="font-size:1.5rem;margin-bottom:0;" class="lo1 row"> </div>
+                </div>
+                <div class="col s4 l2">
+                    <div style="font-size:1rem;margin-bottom:0;" class="row precip"></div>
+                    <div style="font-size:1rem;margin-bottom:0;" class="row wind"></div>
+                    <div style="font-size:1rem;margin-bottom:0;" class="row humid"></div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="cards col s12">
+                <div style="position:relative;width:100%;" class="carousel">
+                    <div class="shift-carousel">
+                        <div class="carousel-item">
+                        <div  class="card">
+                            <div class="card-image">
+                                <br>
+                                <div class="wday"></div>
+                                <br>
+                                <i class="material-icons">cloud_queue</i>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="hi"></div>
+                                <div class="lo"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <br>
+                                <div class="wday"></div>
+                                <br>
+                                <i class="material-icons">cloud_queue</i>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="hi"></div>
+                                <div class="lo"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <br>
+                                <div class="wday"></div>
+                                <br>
+                                <i class="material-icons">cloud_queue</i>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="hi"></div>
+                                <div class="lo"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <br>
+                                <div class="wday"></div>
+                                <br>
+                                <i class="material-icons">cloud_queue</i>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="hi"></div>
+                                <div class="lo"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <br>
+                                <div class="wday"></div>
+                                <br>
+                                <i class="material-icons">cloud_queue</i>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="hi"></div>
+                                <div class="lo"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <br>
+                                <div class="wday"></div>
+                                <br>
+                                <i class="material-icons">cloud_queue</i>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="hi"></div>
+                                <div class="lo"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <br>
+                                <div class="wday"></div>
+                                <br>
+                                <i class="material-icons">cloud_queue</i>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="hi"></div>
+                                <div class="lo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="javascript/main.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
